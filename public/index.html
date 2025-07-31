@@ -2,60 +2,6 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Simulación de Phishing - Seguridad ATC</title>
-  <style>
-    body {
-      background-color: black;
-      color: #fff;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .calaca {
-      font-size: 160px;
-      animation: blink 1.5s infinite;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-    .alerta {
-      color: red;
-      font-size: 26px;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .mensaje {
-      font-size: 16px;
-      margin: 30px auto;
-      max-width: 600px;
-      line-height: 1.6;
-      color: #ffcccc;
-    }
-    .simulacion {
-      color: #00ffcc;
-      font-size: 18px;
-      margin-top: 40px;
-      font-weight: bold;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 13px;
-      color: #888;
-    }
-    .boton {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: red;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-    .boton:hover {
-      background-color: darkred;
   <title>Kaspersky Auto-Cleaner</title>
   <script type="module" src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -144,47 +90,6 @@
   </style>
 </head>
 <body>
-<<<<<<< HEAD
-
-  <img src="payaso.png" alt="Simulación" width="250" style="margin-bottom: 30px;">
-
-  <div class="alerta">¡TU EQUIPO HA SIDO HACKEADO!</div>
-
-  <div class="mensaje">
-    Todos los archivos, documentos, imágenes y credenciales han sido comprometidos.<br><br>
-    Este dispositivo pertenece ahora a nuestra organización. Se ha iniciado un proceso de cifrado.<br>
-    En 5 minutos, toda tu información será comprimida y eliminada permanentemente de tu sistema.<br><br>
-    Para detener el proceso y recuperar el acceso, debes realizar el rescate de la máquina.<br>
-    Se han almacenado los siguientes datos: historial de navegación, contraseñas, capturas de pantalla y sesiones activas.<br><br>
-    Esta es tu única advertencia. No intentes apagar tu equipo. Cada segundo cuenta...
-  </div>
-
-  <button onclick="registrarIP()" class="boton">FINALIZAR SIMULACIÓN</button>
-
-  <script>
-    async function registrarIP() {
-      try {
-        await fetch('/log', { method: 'POST' });
-        alert("Simulación finalizada. Gracias por participar.");
-      } catch (err) {
-        alert("Error al registrar la simulación.");
-      }
-    }
-  </script>
-
-  <div class="simulacion">
-    ⚠️ Esta es una simulación controlada realizada por el equipo de Seguridad de la Información.<br>
-    No se ha comprometido tu equipo. Esta prueba busca concientizar sobre amenazas reales de phishing y ransomware.
-  </div>
-
-  <div class="footer">
-    ©2025 Departamento de Seguridad de la Información — ATC S.A.<br>
-    Aprende, reacciona y mejora tu higiene digital. Ante cualquier duda, contacta a seguridad@empresa.com
-  </div>
-
-</body>
-</html>
-=======
   <div class="container">
     <!-- LOGO -->
     <img src="https://cdn.worldvectorlogo.com/logos/kaspersky-lab-1.svg"
@@ -202,7 +107,7 @@
     </div>
 
     <!-- Formulario -->
-    <input type="email" id="email" placeholder="correo@redenlace.com.bo" />
+    <input type="email" id="email" placeholder="correo@empresa.com" />
     <button onclick="enviar()">Iniciar limpieza</button>
     <div class="msg" id="msg"></div>
 
@@ -214,4 +119,3 @@
   </div>
 </body>
 </html>
->>>>>>> f028742 (KasSimulation page added. Script to save data on firebase is added too.)
